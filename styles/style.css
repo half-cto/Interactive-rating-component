@@ -1,0 +1,193 @@
+* {
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #131518;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 23.75rem;
+    height: 24rem;
+    border-radius: 30px;
+    background-image: linear-gradient(#232A34, #181E27);
+    padding: 2rem;
+}
+
+h1 {
+    font-weight: 700;
+    color: #FFF;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #FFF;
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: .4px; 
+    color: #969FAD;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.circle {
+    display: flex;
+    width: 3.1875rem;
+    height: 3.1875rem;
+    border-radius: 50%;
+    color: #7C8798;
+    background-color: #262E38;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------------------------------------------- */
+/* Rating state */
+/* .rating-state {
+    display: none;
+} */
+.star {
+    margin-bottom: 2rem;
+}
+
+/* Rating buttons */
+.rating-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.rating {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3.5rem;
+    cursor: pointer;
+}
+
+.rating:hover {
+    background-color: #FC7614;
+    color: #FFF;
+}
+
+/* Submit button */
+.submit-button {
+    background-color: #FC7614;
+    border-radius: 1.3875rem;
+    height: 2.8125rem;
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #FFF;
+}
+
+.submit-button:hover > h2 {
+    color: #FC7614;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* Thank You state */
+
+.thank-you-state {
+    display: none;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.ty-img {
+    margin-top: .9375rem;
+} 
+
+.selection-result {
+    display: block;
+    margin-top: 2rem;
+    width: 12.0625rem;
+    height: 2rem;
+    color: #FC7614;
+    background-color: #262E38;
+    border-radius: 1.40625rem;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+.ty-h1 {
+    margin-top: 2.6rem;
+    margin-bottom: .4375rem;
+}
+
+.ty-p {
+    text-align: center;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+@media screen and (max-width: 375px) {
+
+    main {
+        width: 18.9375rem;
+        height: 18.5rem;
+        padding: 1.5rem;
+    }
+/* Rating state */
+    .circle {
+        width: 2.625rem;
+        height: 2.625rem;
+        line-height: 2.9rem;
+    }
+
+    .star{
+        margin-bottom: 1rem;
+    }
+
+    .rating-container {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+/* Thank You state */
+    .ty-img {
+        height: 6rem;
+        width: auto;
+        margin-top: .625rem;
+    }
+
+    .selection-result{
+        margin-top: 1.5rem;
+    }
+
+    .ty-h1 {
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .ty-p {
+        margin-top: .625rem;
+    }
+}
